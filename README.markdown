@@ -1,7 +1,7 @@
 r10k
 ====
 
-Puppet environment and module deployment
+Puppet environment, module deployment, and workflow tool.
 
 [![Build Status](https://travis-ci.org/adrienthebo/r10k.png?branch=master)](https://travis-ci.org/adrienthebo/r10k)
 
@@ -11,14 +11,14 @@ Description
 [librarian-puppet]: https://github.com/rodjek/librarian-puppet
 [workflow]: http://puppetlabs.com/blog/git-workflow-and-puppet-environments/
 
-r10k provides a general purpose toolset for deploying Puppet environments and
-modules. It implements the [Puppetfile][librarian-puppet] format and provides a native
-implementation of Puppet [dynamic environments][workflow].
+r10k provides a general purpose toolset for creating, bundling, and deploying Puppet environments and
+modules.  It helps you create workflows around Puppet development. It implements the [Puppetfile][librarian-puppet] 
+format and provides a native implementation of Puppet [dynamic environments][workflow].
 
-Installation
+Installation 
 ------------
 
-r10k should be compatible with Ruby 1.8.7, 1.9.3, and 2.0.0. Any issue with
+Before you begin please note: r10k should be compatible with Ruby 1.8.7, 1.9.3, and 2.0.0. Any issue with
 those versions should be considered a bug.
 
 ### Rubygems
@@ -44,6 +44,12 @@ Puppet Enterprise uses its own Ruby, so you need to use the correct version of g
 
     /opt/puppet/bin/gem install r10k
     r10k --help
+
+Getting Setup
+-------------
+### Assumptions
+
+
 
 Common Commands
 ---------------
